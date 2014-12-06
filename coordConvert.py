@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import math
 import numpy
 
@@ -16,6 +18,7 @@ class CoordConvert:
                       [0, math.sin(phi),  math.cos(phi)]]) #rotational 
     h = 2 * math.tan(vFov/2) #height raster window in cm
     w = 2 * math.tan(hFov/2) #width of raster window in cm
+
     def rasterToRobot(self, objX, objY):
         x2 = (objX - (self.hRes/2)) * (self.w/self.hRes)
         y2 = (objY - (self.vRes/2)) * (self.h/self.vRes)
@@ -25,12 +28,16 @@ class CoordConvert:
         v1 = self.R * v2
         z1 = v1[2,0]
         gamma = -(self.p1[2,0]/z1)
-        #print v1
-        #print self.p1
-        #print v1 - self.p1
-        #print gamma
-        #print z1
         u = self.p1 + (gamma * v1)
         return u
-        
-        
+    
+    def robotToWorld(self, robotPosX, robotPosY, robotObjX, robotObjY, angle):
+        robotObj = numpy.matrix([[robotObjX],
+                                 [robotObjY]])
+        robotPos = numpy.matrix([[robotPosX],
+                                 [robotPosY]])
+        R1 = ([[math.cos(angle), -math.sin(angle)],
+               [math.sin(angle), math.cos(angle)]])
+        P0 = R1 * robotObj
+        P1 = P0 + robotPos
+        return P1
