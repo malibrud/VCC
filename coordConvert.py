@@ -41,3 +41,10 @@ class CoordConvert:
         P0 = R1 * robotObj
         P1 = P0 + robotPos
         return P1
+    
+    def worldToRobot(self, robotPosX, robotPosY, worldObjX, worldObjY, angle):
+        robotPos = numpy.matrix([[robotPosX],
+                                 [robotPosY]])
+        worldObj = numpy.matrix([[worldObjX],
+                                 [worldObjY]])
+        RT = numpy.matrix([[
