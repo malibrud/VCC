@@ -1,0 +1,54 @@
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\cublas64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\cudart64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\cufft64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\cvextern.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\cvextern_gpu.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\npp64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_calib3d240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_contrib240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_core240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_features2d240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_ffmpeg240_64.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_flann240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_gpu240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_highgui240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_imgproc240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_legacy240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_ml240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_nonfree240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_objdetect240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_photo240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_stitching240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_video240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\opencv_videostab240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\OpenCV_Line_Following_Cone.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\OpenCV_Line_Following_Cone.pdb
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.UI.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.Util.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\ZedGraph.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.UI.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.Util.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.Form1.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.Properties.Resources.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\OpenCV_Line_Following_Cone.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\OpenCV_Line_Following_Cone.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\ZedGraph.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.xml
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.UI.xml
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.Util.xml
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.Form1.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.Properties.Resources.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.csprojResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\obj\x86\Debug\OpenCV_Line_Following_Cone.csproj.GenerateResource.Cache
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.CV.UI.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\OpenCV_Line_Following_Cone\OpenCV_Line_Following_Cone\bin\Debug\Emgu.Util.dll

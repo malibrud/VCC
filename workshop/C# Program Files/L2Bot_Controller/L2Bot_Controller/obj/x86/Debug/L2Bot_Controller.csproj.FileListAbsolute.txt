@@ -1,0 +1,19 @@
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\bin\Debug\L2Bot_Controller.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\bin\Debug\L2Bot_Controller.pdb
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.Form1.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.Properties.Resources.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.pdb
+C:\Users\Rizzo\LTU\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.exe
+C:\Users\Rizzo\LTU\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\bin\Debug\L2Bot_Controller.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\bin\Debug\L2Bot_Controller.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.csprojResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.Form1.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.Properties.Resources.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Controller\L2Bot_Controller\obj\x86\Debug\L2Bot_Controller.csproj.GenerateResource.Cache
