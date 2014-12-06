@@ -47,4 +47,7 @@ class CoordConvert:
                                  [robotPosY]])
         worldObj = numpy.matrix([[worldObjX],
                                  [worldObjY]])
-        RT = numpy.matrix([[
+        RT = numpy.matrix([[math.cos(angle), math.sin(angle)],
+                           [-math.sin(angle), math.cos(angle)]])
+        VR = RT * (worldObj - robotPos)
+        return VR
