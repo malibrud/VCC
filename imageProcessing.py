@@ -1,9 +1,20 @@
 #!/usr/bin/python2.7
 
-from SimpleCV import Camera
+from SimpleCV import *
 
-cam = Camera()
+hist = Camera().getImage().histogram(20)
+brightpixels = 0
+darkpixels = 0
+i = 0
 
-while True:
-    img = cam.getImage()
-    img.show()
+for h in hist:
+    if i < 10:
+        darkpixels = darkpixels + hist[i]
+    else:
+        brightpixels = brightpixels + hist[i]
+    i = i + 1
+
+if (brightpixels > darkpixels):
+    print "Bright"
+else:
+    print "Dark"
