@@ -2,19 +2,16 @@
 
 from SimpleCV import *
 
-hist = Camera().getImage().histogram(20)
-brightpixels = 0
-darkpixels = 0
-i = 0
+class ImageProcessing:
 
-for h in hist:
-    if i < 10:
-        darkpixels = darkpixels + hist[i]
-    else:
-        brightpixels = brightpixels + hist[i]
-    i = i + 1
-
-if (brightpixels > darkpixels):
-    print "Bright"
-else:
-    print "Dark"
+    def lineFinding(self, image):
+        lineSegmentArray = []
+        whiteLine = image.colorDistance(Color.WHITE)
+        line = image - whiteLine
+        blobArray = line.findBlobs()
+        for blob in blobArray:
+            if blob.area() > 200:
+                blob.draw(color=Color.RED, width=-1)
+                lineSegmentArray.append(blob.centroid())
+                line.drawCircle((blob.centroid()),10,color=Color.BLUE)
+                line.show()
