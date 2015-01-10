@@ -3,7 +3,7 @@
 from SimpleCV import *
 
 while 1:
-    img = Image("floorImages/dottedLine.jpg")
+    img = Image("floorImages/floor.jpg")
     whiteLine = img.colorDistance(Color.WHITE)
     line = img - whiteLine
     blobArray = line.findBlobs()
