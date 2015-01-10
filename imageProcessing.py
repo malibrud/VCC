@@ -1,6 +1,7 @@
 #!/usr/bin/python2.7
 
 from SimpleCV import *
+import time
 
 class ImageProcessing:
 
@@ -10,9 +11,9 @@ class ImageProcessing:
         line = image - whiteLine
         blobArray = line.findBlobs()
         for blob in blobArray:
-            if blob.area() > 200:
+            if blob.area() > 200.0:
                 blob.draw(color=Color.RED, width=-1)
-                print lineSegmentArray[:]
                 lineSegmentArray.append(blob.centroid())
                 line.drawCircle((blob.centroid()),10,color=Color.BLUE)
                 line.show()
+        return lineSegmentArray

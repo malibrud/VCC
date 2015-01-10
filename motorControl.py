@@ -1,8 +1,10 @@
+#! /usr/bin/python2.7
+
 import serial
 class MotorControl:
 
 
-    def __init__(self);
+    def __init__(self):
         self.ser = serial.Serial()
         self.ser.port = "COM5"
         self.ser.baudrate = 2400
