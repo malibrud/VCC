@@ -12,6 +12,7 @@ class ImageProcessing:
         for blob in blobArray:
             if blob.area() > 200:
                 blob.draw(color=Color.RED, width=-1)
+                print lineSegmentArray[:]
                 lineSegmentArray.append(blob.centroid())
                 line.drawCircle((blob.centroid()),10,color=Color.BLUE)
                 line.show()
