@@ -6,7 +6,8 @@ class MotorControl:
 
     def __init__(self):
         self.ser = serial.Serial()
-        self.ser.port = "COM5"
+        self.ser.port = "/dev/pts/3"
+        print ser.portstr
         self.ser.baudrate = 2400
         self.ser.bytesize = serial.EIGHTBITS
         self.ser.stopbits = serial.STOPBITS_TWO
@@ -26,4 +27,7 @@ class MotorControl:
     def stop(self):
         self.ser.write("\x01\x7f\x7f")
     
-    
+    while True:
+        forward(self)
+        stop(self)
+        backward(self) 

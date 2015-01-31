@@ -1,8 +1,12 @@
-from SimpleCV import *
+#! /usr/bin/python2.7
 
-cam = Camera()
+from SimpleCV import Camera 
+from SimpleCV import Image
+
+cam = Camera(1)
 
 while True:
     img = cam.getImage()
+    print img
     img.show()
 

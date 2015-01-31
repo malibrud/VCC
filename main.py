@@ -6,7 +6,7 @@ from coordConvert import *
 from imageProcessing import *
 import time
 
-#mc = MotorControl()
+mc = MotorControl()
 cc = CoordConvert()
 ip = ImageProcessing()
 cam = Camera(1)
