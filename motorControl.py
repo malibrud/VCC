@@ -7,7 +7,7 @@ class MotorControl:
 
     def __init__(self):
         #self.ser = serial.Serial()
-        self.ser.port = "/dev/pts/2" #/dev/pts/3
+        self.ser.port = "/dev/ttyUSB0" #/dev/pts/3
         print self.ser.portstr
         self.ser.baudrate = 2400
         self.ser.bytesize = serial.EIGHTBITS
