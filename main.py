@@ -14,6 +14,8 @@ cam = Camera(1)
 robotX = 0
 robotY = 0
 
+mc.forward()
+
 while 1:
     img = cam.getImage()
     lineSegments = ip.lineFinding(img)

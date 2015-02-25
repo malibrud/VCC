@@ -3,11 +3,12 @@
 import serial
 class MotorControl:
 
+    ser = serial.Serial()
 
     def __init__(self):
-        self.ser = serial.Serial()
-        self.ser.port = "/dev/pts/3"
-        print ser.portstr
+        #self.ser = serial.Serial()
+        self.ser.port = "/dev/pts/2" #/dev/pts/3
+        print self.ser.portstr
         self.ser.baudrate = 2400
         self.ser.bytesize = serial.EIGHTBITS
         self.ser.stopbits = serial.STOPBITS_TWO
@@ -25,9 +26,4 @@ class MotorControl:
         self.ser.write("x01\x6f\x7f")
         
     def stop(self):
-        self.ser.write("\x01\x7f\x7f")
-    
-    while True:
-        forward(self)
-        stop(self)
-        backward(self) 
+        self.ser.write("\x01\x7f\x7f") 
