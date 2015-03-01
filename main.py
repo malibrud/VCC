@@ -1,21 +1,23 @@
 #! /usr/bin/python2.7
 
 from SimpleCV import *
-from motorControl import *
+#from motorControl import *
 from coordConvert import *
 from imageProcessing import *
+from robotModel import *
 import time
 
-mc = MotorControl()
+#mc = MotorControl()
 cc = CoordConvert()
 ip = ImageProcessing()
-cam = Camera(1)
+rm = RobotModel()
+cam = Camera(0)
 
 robotX = 0
 robotY = 0
 
 
-mc.forward()
+#mc.forward()
 
 while 1:
     # Get an image
@@ -31,12 +33,17 @@ while 1:
     # We may also want to find other features such as corners or edges.
     # For each paper, there will be 4 corners.  Also corners can be used 
     # if a partial paper or tape is in view.
+    rm.right()
+    time.sleep(.1)
+    print rm.x
+    print rm.y
+    print rm.th
+
     for i in range(0, len(lineSegments)):
         s = lineSegments[i]
         r = cc.rasterToRobot(s[0], s[1])
         w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
         print w
-    #print lineSegments
 
     # We will need to compare each blob in the world or robot coordinate system
     # to those on the known landmark list.
