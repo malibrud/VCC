@@ -1,3 +1,5 @@
+#! /usr/bin/python2.7
+
 import time
 import math
 class RobotModel:
@@ -7,7 +9,7 @@ class RobotModel:
         self.y = 0
         self.th = 0
         self.t = time.time()
-        self.speed = 30
+        self.speed = 3
         self.vl = 0
         self.vr = 0
         self.w = 34.5
@@ -63,3 +65,12 @@ class RobotModel:
             dy = math.sin(dth) * self.w/2
             self.x = self.x + dx * math.cos(self.th)* dt - dy * math.sin(self.th)* dt 
             self.y = self.y + dx * math.sin(self.th)* dt + dy * math.cos(self.th)* dt 
+
+
+rm = RobotModel()
+for i in range(0,50):
+	rm.right()
+	time.sleep(1)
+	print rm.x
+	print rm.y
+	print " "
