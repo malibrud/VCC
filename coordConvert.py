@@ -8,7 +8,7 @@ class CoordConvert:
     vFov =  37 * math.pi/180.0 #vertical field of view
     hRes = 635 #horizontal resolution
     vRes = 453 #vertical resolution
-    Theta = 40 * math.pi/180.0 #angle of declination
+    Theta = 50 * math.pi/180.0 #angle of declination
     phi = -(Theta + math.pi/2) #vertical to declination of camera
     p1 = numpy.matrix([[0],
                        [22.5],
