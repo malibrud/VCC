@@ -17,6 +17,7 @@ robotX = 0
 robotY = 0
 
 robotBlobArray = []
+paperArray = []
 speed = 22.1
 rps = .635
 
@@ -28,7 +29,7 @@ while 1:
 
     # find blobs
     lineSegments = ip.lineFinding(img)
-
+    paper = ip.paperFinding(img)
     # for each located blob, convert the position from camera to robot
     # and them from robot to world coordinate system
     # We may need to filter them based on which ones are fully in the view 
@@ -43,25 +44,42 @@ while 1:
         robotBlobArray.append(r)
         w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
 
+
+    for i in range(0, len(paperArray)):
+        s = paper[i]
+        r = cc.rasterToRobot(s[0], s[1])
+        paperArray.append(r)
+        w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
     #print robotBlobArray[-1]
 
-    nearestBlob = robotBlobArray[-1]
+    if len(robotBlobArray) > 0:
 
-    angle = math.atan2(nearestBlob.item((1,0)) , nearestBlob.item((0,0)))
-    angle = angle - (math.pi/2)
+        nearestBlob = robotBlobArray[-1]
 
-    print angle
+        angle = math.atan2(nearestBlob.item((1,0)) , nearestBlob.item((0,0)))
+        angle = angle - (math.pi/2)
 
-    if angle < -.1:
-	mc.right()
-	time.sleep(-angle/rps) 
-	mc.stop()
+        print angle
 
-    if angle > .1:
-	mc.left()
-	time.sleep(angle/rps)
-	mc.stop()
+        if angle < -.1:
+	    mc.right()
+	    time.sleep(-angle/rps) 
+	    mc.stop()
 
+        if angle > .1:
+	    mc.left()
+	    time.sleep(angle/rps)
+	    mc.stop()
+
+        dist = nearestBlob.item((1,0)) - 62 + 10
+
+        if dist > 0:
+    
+            mc.forward()
+            time.sleep(dist/speed)
+            mc.stop()
+    if paperArray > 0:
+        mc.stop()         
 #    if nearestBlob.item((0,0)) > 10:
 #	mc.right()
 #	time.sleep(.1)
