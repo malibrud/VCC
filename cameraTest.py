@@ -10,5 +10,5 @@ img = cam.getImage()
 blobArray = img.findBlobs()
 
 for blob in blobArray:
-    blob.draw(color=Color.RED, width=-1)
+    blob.draw(color=Color.GREEN, width=-1)
     img.show
