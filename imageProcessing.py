@@ -5,31 +5,26 @@ import time
 
 class ImageProcessing:
 
-    def lineFinding(self, image):
-        lineSegmentArray = []
-        whiteLine = image.colorDistance(Color.WHITE)
-        line = image - whiteLine
-        blobArray = line.findBlobs(5)
+    def __init__(self):
+	self.lineSegmentArray = []
+	self.paperArray = []
+
+    def findGarbage(self, image):
+	lineSegmentArray = []
+	paperArray = []
+        blobArray = image.findBlobs(150)
         for blob in blobArray:
-            if blob.area() > 200.0:
+            if blob.area() < 16000 and blob.area() > 2000:
                 if blob.mHoleContour < 2:
                    blob.draw(color=Color.RED, width=-1)
                    lineSegmentArray.append(blob.centroid())
-                   line.drawCircle((blob.centroid()),10,color=Color.BLUE)
-                   line.show()
-        return lineSegmentArray
+                   image.drawCircle((blob.centroid()),10,color=Color.BLUE)
+                   image.show()
 
-    def paperFinding(self, image):	
-        lineSegmentArray = []
-        redLine = image.colorDistance(Color.RED)
-        line = image - redLine
-        blobArray = line.findBlobs()
-        if blobArray:
-            for blob in blobArray:
-                if blob.area() > 200.0:
-                    if blob.mHoleContour < 2:
-                       blob.draw(color=Color.BLUE, width=-1)
-                       lineSegmentArray.append(blob.centroid())
-                       line.drawCircle((blob.centroid()),10,color=Color.GREEN)
-                       line.show()
-            return lineSegmentArray
+	    elif blob.area() > 16000: 
+                if blob.mHoleContour < 2:
+                   blob.draw(color=Color.GREEN, width=-1)
+                   paperArray.append(blob.centroid())
+                   image.drawCircle((blob.centroid()),10,color=Color.BLUE)
+                   image.show()
+

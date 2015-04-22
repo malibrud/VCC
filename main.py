@@ -26,10 +26,9 @@ rps = .635
 while 1:
     # Get an image
     img = cam.getImage()
-
+    
     # find blobs
-    lineSegments = ip.lineFinding(img)
-    paper = ip.paperFinding(img)
+    ip.findGarbage(img)
     # for each located blob, convert the position from camera to robot
     # and them from robot to world coordinate system
     # We may need to filter them based on which ones are fully in the view 
@@ -38,18 +37,13 @@ while 1:
     # For each paper, there will be 4 corners.  Also corners can be used 
     # if a partial paper or tape is in view.
 
-    for i in range(0, len(lineSegments)):
-        s = lineSegments[i]
+    for i in range(0, len(ip.lineSegmentArray)):
+        s = ip.lineSegmentArray[i]
         r = cc.rasterToRobot(s[0], s[1])
         robotBlobArray.append(r)
         w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
 
 
-    for i in range(0, len(paperArray)):
-        s = paper[i]
-        r = cc.rasterToRobot(s[0], s[1])
-        paperArray.append(r)
-        w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
     #print robotBlobArray[-1]
 
     if len(robotBlobArray) > 0:
@@ -78,8 +72,6 @@ while 1:
             mc.forward()
             time.sleep(dist/speed)
             mc.stop()
-    if paperArray > 0:
-        mc.stop()         
 #    if nearestBlob.item((0,0)) > 10:
 #	mc.right()
 #	time.sleep(.1)

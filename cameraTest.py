@@ -10,21 +10,25 @@ blobHSVArray = []
 blobHeightArray = []
 blobWidthArray = []
 blobAreaArray = []
-
+img = cam.getImage()
+img.show()
+img.save("image9.bmp")
 while 1:
     img = cam.getImage()
 
     blobArray = img.findBlobs()
-
+    i = 0
     for blob in blobArray:
 	if blob.mHoleContour < 1:
-        	blob.draw(color=Color.GREEN, width=-1)
-		img.drawCircle((blob.centroid()), 10, color=Color.RED)
-		#img.drawCircle((blob.Corner()), 10, color=Color.Blue)
-		blobHeightArray.append(blob.minRectHeight())
-		blobWidthArray.append(blob.minRectWidth())
-		blobAreaArray.append(blob.area())
-		blobColorArray.append(blob.meanColor())
+                if blob.area() > 16000:
+        	   blob.draw(color=Color.GREEN, width=-1)
+		   img.drawCircle((blob.centroid()), 10 + i, color=Color.RED)
+		   #img.drawCircle((blob.Corner()), 10, color=Color.Blue)
+		   blobHeightArray.append(blob.minRectHeight())
+		   blobWidthArray.append(blob.minRectWidth())
+		   blobAreaArray.append(blob.area())
+		   blobColorArray.append(blob.meanColor())
+                   i = i + 10
 
    # for i in range(0,len(blobColorArray)):
 #	hsv = Color.hsv(blobColorArray[i])
@@ -35,9 +39,9 @@ while 1:
  #       print ' '
 #
 
-    print blobHeightArray[0]
-    print blobWidthArray[0]
-    print blobAreaArray[0]
+    print blobHeightArray
+    print blobWidthArray
+    print blobAreaArray
     print ' '    
 
     img.show()
