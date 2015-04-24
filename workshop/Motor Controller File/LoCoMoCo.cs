@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO.Ports;
 
-namespace L2Bot_Controller
+namespace VCCTest1
 {
     class LoCoMoCo
     {
