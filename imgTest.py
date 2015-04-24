@@ -6,17 +6,23 @@ import time
 
 plt.ion()
 
-black = Image("image9.bmp")
-image = Image("red.bmp")
-#image = image.scale(0.25)
+image = Image("image8.bmp")
+BLUE = (85,118,179)
+RED = (170,90,113)
+GREEN = (99, 160, 127)
+YELLOW = (181, 196, 104)
+PURPLE = (127,131,177)
+YELLOW = (127,131,177)
+blue_dist = image.colorDistance(RED)
+blue_only = image-blue_dist
+gray = blue_only.toGray() 
+bw = blue_dist.binarize(45)
+bw.show()
 
-bhist = black.hueHistogram()
 hist = image.hueHistogram()
 peaks = image.huePeaks()
 print peaks
-plt.plot(hist)
-plt.plot(bhist)
-plt.plot(hist-bhist)
-plt.draw()
+#plt.plot(hist)
+#plt.draw()
 
 time.sleep(100)
