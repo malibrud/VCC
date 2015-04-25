@@ -11,12 +11,12 @@ class ImageProcessing:
 	self.BLUE = (0,50,185)
 	self.RED = (170,90,113)
 	self.GREEN = (99, 160, 127)
-	self.YELLOW = (181, 196, 104)
+	self.YELLOW = (183, 177, 29)
 	self.PURPLE = (127,131,177)
-	self.PINK = (193,157,171)
+	self.PINK = (206,71,155)
 	self.ORANGE = (209,158,129)
 	self.BROWN = (147,126,100)
-	self.LINE = (193,216,224)
+	self.LINE = (255,255,255)
 	self.colors = [self.BLUE, self.RED, self.GREEN, self.YELLOW, self.PURPLE, self.PINK, self.ORANGE, self.BROWN, self.LINE]
 	self.cnames = ["blue", "red", "green", "yellow", "purple", "pink", "orange", "brown", "line"]
 	
@@ -27,9 +27,11 @@ class ImageProcessing:
 
 	i = 0
 	for c in self.colors:
-		colorSelect = image.colorDistance(self.colors[i]).binarize()	
+		colorSelect = image.colorDistance(self.colors[i]).binarize(40)	
         	blobArray = colorSelect.findBlobs()
+
 		if blobArray:
+		        print "found " + self.cnames[i] + " " + str(len(blobArray))
 			for blob in blobArray:
 				if blob.area() > 1000:
 					blob.draw(color = (255,0,0), alpha = -1, width = -1)

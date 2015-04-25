@@ -24,6 +24,8 @@ rps = .635
 #mc.forward()
 
 while 1:
+
+    time.sleep(3)
     # Get an image
     img = cam.getImage()
     

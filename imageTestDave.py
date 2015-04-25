@@ -9,7 +9,7 @@ while 1:
 	blobArray = colorSelect.findBlobs()
 	for blob in blobArray:
 		if blob.mHoleContour < 2:
-			if blob.area() > 1000:
+			if blob.area() > 1500:
 				x = blob.centroid()[0]
 				y = blob.centroid()[1]
 			 	img.drawText("line",x, y, color=Color.RED, fontsize=28)	
