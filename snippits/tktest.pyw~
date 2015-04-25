@@ -1,0 +1,6 @@
+import sys
+from Tkinter import *
+
+mGui = Tk()
+
+mGui.geometry('450x450')
