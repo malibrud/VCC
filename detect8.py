@@ -21,15 +21,16 @@ cnames = ["blue", "red", "green", "yellow", "purple", "pink", "orange", "brown"]
 i = 0
 for c in colors:
     blue_dist = image.colorDistance(colors[i])
-    bw = blue_dist.binarize(40)
+    bw = blue_dist.binarize(50)
     ba = bw.findBlobs()
-    blob = ba[-1]
-    x = blob.centroid()[0]
-    y = blob.centroid()[1]
-    print x
-    print y
-    image.drawText(cnames[i],x, y, color=Color.RED, fontsize=28)  
-    i=i+1
+    if ba:
+        blob = ba[-1]
+        x = blob.centroid()[0]
+        y = blob.centroid()[1]
+        print x
+        print y
+        image.drawText(cnames[i],x, y, color=Color.RED, fontsize=28)  
+        i=i+1
 
 image.show()
 

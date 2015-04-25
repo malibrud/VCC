@@ -1,13 +1,13 @@
 #! /usr/bin/python2.7
 
 from SimpleCV import *
-from motorControl import *
+#from motorControl import *
 from coordConvert import *
 from imageProcessing import *
 #from robotModel import *
 import time
 
-mc = MotorControl()
+#mc = MotorControl()
 cc = CoordConvert()
 ip = ImageProcessing()
 #rm = RobotModel()
@@ -56,22 +56,22 @@ while 1:
         print angle
 
         if angle < -.1:
-	    mc.right()
+#	    mc.right()
 	    time.sleep(-angle/rps) 
-	    mc.stop()
+#	    mc.stop()
 
         if angle > .1:
-	    mc.left()
+#	    mc.left()
 	    time.sleep(angle/rps)
-	    mc.stop()
+#	    mc.stop()
 
         dist = nearestBlob.item((1,0)) - 62 + 10
 
         if dist > 0:
     
-            mc.forward()
+#            mc.forward()
             time.sleep(dist/speed)
-            mc.stop()
+#            mc.stop()
 #    if nearestBlob.item((0,0)) > 10:
 #	mc.right()
 #	time.sleep(.1)

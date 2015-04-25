@@ -1,10 +1,10 @@
 #!/usr/bin/python2.7
 
 from SimpleCV import *
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import time
 
-plt.ion()
+#plt.ion()
 
 image = Image("image8.bmp")
 BLUE = (85,118,179)
