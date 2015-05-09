@@ -8,37 +8,43 @@ class ImageProcessing:
     def __init__(self):
 	self.lineSegmentArray = []
 	self.paperArray = []
-	self.BLUE = (0,50,185)
-	self.RED = (170,90,113)
-	self.GREEN = (99, 160, 127)
+	self.colorValueArray = []
+	self.BROWN = (148,124,104)
+	self.BLACK = (128,128,128)
+	self.WHITE = (255,255,255)
+	self.BLUE = (0,49,243)
+	self.RED = (253,0,61)
+	self.GREEN = (0, 190, 88)
 	self.YELLOW = (183, 177, 29)
 	self.PURPLE = (127,131,177)
 	self.PINK = (206,71,155)
 	self.ORANGE = (209,158,129)
 	self.BROWN = (147,126,100)
-	self.LINE = (255,255,255)
-	self.colors = [self.BLUE, self.RED, self.GREEN, self.YELLOW, self.PURPLE, self.PINK, self.ORANGE, self.BROWN, self.LINE]
-	self.cnames = ["blue", "red", "green", "yellow", "purple", "pink", "orange", "brown", "line"]
+	self.colors = [self.BLACK, self.BLUE, self.BROWN, self.GREEN, self.ORANGE, self.PINK, self.RED, self.PURPLE, self.WHITE, self.YELLOW]
+	self.cnames = ["black", "blue", "brown", "green", "orange", "pink", "red", "purple", "white", "yellow"]
 	
 
     def findGarbage(self, image):
-	lineSegmentArray = []
-	paperArray = []
+	self.lineSegmentArray = []
+	self.paperArray = []
 
 	i = 0
+
 	for c in self.colors:
-		colorSelect = image.colorDistance(self.colors[i]).binarize(40)	
+		colorSelect = image.colorDistance(self.colors[i]).binarize(100)	
         	blobArray = colorSelect.findBlobs()
 
 		if blobArray:
-		        print "found " + self.cnames[i] + " " + str(len(blobArray))
 			for blob in blobArray:
-				if blob.area() > 1000:
+				if blob.mHoleContour < 2 and blob.area() > 1000 and blob.area() < 7000 and i == 8:
+					self.lineSegmentArray.append(blob.centroid())
+					blob.draw(color = (0,255,0), alpha = -1, width = -1)
+					image.drawText("line", blob.centroid()[0], blob.centroid()[1], color=Color.BLUE, fontsize=28)
+				if blob.mHoleContour < 2 and blob.area() > 7000 and i != 8:
+					self.paperArray.append(blob.centroid())
 					blob.draw(color = (255,0,0), alpha = -1, width = -1)
-					print "found " + self.cnames[i]
-					x = blob.centroid()[0]
-					y = blob.centroid()[1]
-					image.drawText(self.cnames[i],x, y, color=Color.RED, fontsize=28)
+					self.colorValueArray.append(i)
+					image.drawText(self.cnames[i], blob.centroid()[0], blob.centroid()[1], color=Color.GREEN, fontsize=28)
 
 		i = i + 1
 

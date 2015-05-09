@@ -12,7 +12,7 @@ blobWidthArray = []
 blobAreaArray = []
 img = cam.getImage()
 img.show()
-img.save("image13.bmp")
+img.save("image15.bmp")
 while 1:
     img = cam.getImage()
 
