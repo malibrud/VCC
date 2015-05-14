@@ -14,16 +14,22 @@ class MotorControl:
         self.ser.stopbits = serial.STOPBITS_TWO
         self.ser.open()
     def forward(self):
-        self.ser.write("x01\x6f\x6f")
+        self.ser.write("\x01\x6f\x6f")
         
     def backward(self):
-        self.ser.write("x01\x5f\x5f")
+        self.ser.write("\x01\x5f\x5f")
         
     def left(self):
-        self.ser.write("x01\x7f\x6f")
+        #self.ser.write("x01\x7f\x6f")
+        self.ser.write("\x01\x5f\x6f")
         
     def right(self):
-        self.ser.write("x01\x6f\x7f")
+        #self.ser.write("x01\x6f\x7f")
+        self.ser.write("\x01\x6f\x5f")
         
     def stop(self):
         self.ser.write("\x01\x7f\x7f") 
+
+    def coast(self):
+        self.ser.write("\x01\x00\x00") 
+

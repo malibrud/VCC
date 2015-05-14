@@ -21,20 +21,28 @@ paperArray = []
 colorFoundArray = [0,0,0,0,0,0,0,0,0,0]
 colorSequenceArray = []
 speed = 22.1
-rps = .635
+rps = 1.26
 
 #mc.forward()
 
 while 1:
+    #mc.left()
+    #time.sleep(1)
+    #mc.right()
+    #time.sleep(1)
     paperArray = []
     lineArray = []
     
-    print len(paperArray )
-    print len(lineArray )
+    img = 0
     # Get an image
     img = cam.getImage()
+    img = cam.getImage()
+    img.show()
     # find blobs
+    t = time.time()
     ip.findGarbage(img)
+    print "time " + str(time.time() - t)
+    #raw_input("hit enter")
     # for each located blob, convert the position from camera to robot
     # and them from robot to world coordinate system
     # We may need to filter them based on which ones are fully in the view 
@@ -43,12 +51,14 @@ while 1:
     # For each paper, there will be 4 corners.  Also corners can be used 
     # if a partial paper or tape is in view.
 
+    print len(ip.lineSegmentArray)
     for i in range(0, len(ip.lineSegmentArray)):
         s = ip.lineSegmentArray[i]
         r = cc.rasterToRobot(s[0], s[1])
         lineArray.append(r)
         w = cc.robotToWorld(0,0, r.item((0,0)), r.item((1,0)), 0)
 
+    print len(ip.paperArray)
     for i in range(0, len(ip.paperArray)):
         s = ip.paperArray[i]
         r = cc.rasterToRobot(s[0], s[1])
@@ -74,7 +84,7 @@ while 1:
 	            closest = paperArray[i][1]
 	            closestIDX = i
             driveTo = paperArray[closestIDX]
-	    print "nearest paper: " + ''.join(str(e) for e in driveTo) 
+	    print "closest paper: " + ''.join(str(e) for e in driveTo) 
 
     if len(paperArray) == 0 and len(lineArray) > 0:
 	    closest = 1000
@@ -84,42 +94,51 @@ while 1:
 	            closest = lineArray[i][1]
 	            closestIDX = i
             driveTo = lineArray[closestIDX]
-	    print "nearest line segment: " + ''.join(str(e) for e in driveTo) 
+	    print "closest line segment: " + ''.join(str(e) for e in driveTo) 
         
     if len(paperArray) == 0 and len(lineArray) == 0:
+	mc.stop()
         break
 
     print "driving to: " + ''.join(str(e) for e in driveTo) 
-    nearestBlob = driveTo 
+    closestBlob = driveTo 
     
-    #angle = math.atan2(nearestBlob.item((1,0)) , nearestBlob.item((0,0)))
-    angle = math.atan2(nearestBlob[1] , nearestBlob[0])
+    #angle = math.atan2(closestBlob.item((1,0)) , closestBlob.item((0,0)))
+    angle = math.atan2(closestBlob[1] , closestBlob[0])
     angle = angle - (math.pi/2)
 
     print angle
 
-    if angle < -.1:
+    if angle < -.05:
         mc.right()
         time.sleep(-angle/rps) 
-        mc.stop()
+        mc.coast()
 
-    if angle > .1:
+    if angle > .05:
 	    mc.left()
 	    time.sleep(angle/rps)
-	    mc.stop()
+	    mc.coast()
         
-    dist = nearestBlob.item((1,0)) - 62 + 10
+    dist = (closestBlob[1] - 25 ) * 0.5
+    print "dist: " + str(float(dist[0]))
 
     if dist > 0:
         mc.forward()
-        time.sleep(dist/speed)
-        mc.stop()
+        time.sleep(float(dist)/speed)
+        #time.sleep(.1)
+        mc.coast()
+	#time.sleep(.1)
+
+    else:
+	mc.stop()
+
+    time.sleep(0.5)
     
-    #if nearestBlob.item((0,0)) > 10:
+    #if closestBlob.item((0,0)) > 10:
 	#mc.right()
 	#time.sleep(.1)
 
-    #if nearestBlob.item((0,0)) < -10:
+    #if closestBlob.item((0,0)) < -10:
 	#mc.left()
 	#time.sleep(.1)
     

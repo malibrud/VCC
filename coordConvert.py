@@ -4,7 +4,7 @@ import math
 import numpy
 
 class CoordConvert:
-    hFov = 1 #horizontal field of view
+    hFov = 1.0 #horizontal field of view
     vFov = .6 #vertical field of view
     hRes = 640 #horizontal resolution
     vRes = 360 #vertical resolution
