@@ -98,7 +98,10 @@ while 1:
         
     if len(paperArray) == 0 and len(lineArray) == 0:
 	mc.stop()
-        break
+	mc.right()
+	time.sleep(math.pi/rps)
+	mc.stop()
+	time.sleep(.1)
 
     print "driving to: " + ''.join(str(e) for e in driveTo) 
     closestBlob = driveTo 
@@ -119,7 +122,7 @@ while 1:
 	    time.sleep(angle/rps)
 	    mc.coast()
         
-    dist = (closestBlob[1] - 25 ) * 0.5
+    dist = (closestBlob[1] - 25 ) * 0.25
     print "dist: " + str(float(dist[0]))
 
     if dist > 0:

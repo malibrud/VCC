@@ -98,9 +98,12 @@ while 1:
         
     if len(paperArray) == 0 and len(lineArray) == 0:
 	mc.stop()
-        break
+	mc.right()
+	time.sleep(math.pi/rps)
+	mc.stop()
+	time.sleep(.1)
 
-    print "driving to: " + ''.join(str(e) for e in driveTo) 
+    #print "driving to: " + ''.join(str(e) for e in driveTo) 
     closestBlob = driveTo 
     
     #angle = math.atan2(closestBlob.item((1,0)) , closestBlob.item((0,0)))
