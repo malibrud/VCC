@@ -19,6 +19,8 @@ class ImageProcessing:
 	self.PURPLE = (180,37,106)
 	self.PINK = (255,85,74)
 	self.ORANGE = (253,121,32)
+	self.TAPE = (251,184,136)
+	self.TAPE_THRESHOLD = (221,164,106)
 	self.colors = [self.BLACK, self.BLUE, self.BROWN, self.GREEN, self.ORANGE, self.PINK, self.RED, self.PURPLE, self.WHITE, self.YELLOW]
 	self.cnames = ["black", "blue", "brown", "green", "orange", "pink", "red", "purple", "white", "yellow"]
 	self.threshArray = [(50,50,50), (50,50,50), (50,50,50), (50,50,50),(50,50,50),(50,50,50),(50,50,50),(50,50,50),(50,50,50),(50,50,50)]
@@ -26,14 +28,24 @@ class ImageProcessing:
     def findGarbage(self, image):
 	self.lineSegmentArray = []
 	self.paperArray = []
-	image.show()
+
+	#colorSelect = image.binarize(self.TAPE_THRESHOLD).invert()
+	#colorSelect.show()
+	#raw_input("hit return")
+       	#blobArray = colorSelect.findBlobs(minsize=1000, threshval=80)
+	#for blob in blobArray:
+		#blob.show()
+
+
+	#raw_input("hit return")
+
 
 	blobArray = image.findBlobs(minsize=400, threshval=80)
 	print str(blobArray)
 
 	
 	if len(blobArray) == 0:
-		image.show()
+		#image.show()
 		print "No blobs found"
 		return
 
