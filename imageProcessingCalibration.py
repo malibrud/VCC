@@ -26,18 +26,25 @@ class ImageProcessing:
     def findGarbage(self, image):
 	self.lineSegmentArray = []
 	self.paperArray = []
+	image.show()
 
 	blobArray = image.findBlobs(minsize=400, threshval=80)
+	print str(blobArray)
 
+	
 	if len(blobArray) == 0:
+		image.show()
+		print "No blobs found"
 		return
+
 
 	j = 0
 	for blob in blobArray:
 		#if blob.area() < 500 or blob.mHoleContour >=2:
-		if blob.area() < 1000:
+		if blob.area() < 500:
 			continue 
 		print "processing blob " +str(j) + " of mean color " + str(blob.meanColor())
+		print "  Area = " +str(blob.area()) 
 		i = 0
 		minDist = 1000.0
 		minDistIDX = -1
@@ -52,13 +59,6 @@ class ImageProcessing:
 		#if abs(blob.meanColor()[0] - self.colors[i][0]) < self.threshArray[i][0] and abs(blob.meanColor()[1] - self.colors[i][1]) < self.threshArray[i][1] and abs(blob.meanColor()[2] - self.colors[i][2]) < self.threshArray[i][2]:
 		blob.show()
 		image.drawText(self.cnames[minDistIDX] + str(j), blob.centroid()[0], blob.centroid()[1], color=Color.BLACK, fontsize=28)
-		if blob.area() > 1000 and blob.area() < 10000 and minDistIDX == 8:
-			self.lineSegmentArray.append(blob.centroid())
-			image.drawText("line", blob.centroid()[0], blob.centroid()[1]+20, color=Color.BLUE, fontsize=28)
-		if blob.mHoleContour < 2 and blob.area() > 10000 and i != 8:
-			self.paperArray.append(blob.centroid())
-			self.colorValueArray.append(i)
-			image.drawText("paper", blob.centroid()[0], blob.centroid()[1]+20, color=Color.GREEN, fontsize=28)
 		j = j + 1
 	image.show()
 
