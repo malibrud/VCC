@@ -1,0 +1,56 @@
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\L2Bot_Stop_At_White.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\L2Bot_Stop_At_White.pdb
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.UI.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.Util.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\ZedGraph.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.UI.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.Util.xml
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.Form1.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.Properties.Resources.resources
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.exe
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.pdb
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\cublas64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\cudart64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\cufft64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\cvextern.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\cvextern_gpu.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\npp64_42_9.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_calib3d240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_contrib240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_core240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_features2d240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_ffmpeg240_64.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_flann240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_gpu240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_highgui240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_imgproc240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_legacy240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_ml240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_nonfree240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_objdetect240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_photo240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_stitching240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_video240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\opencv_videostab240.dll
+C:\Users\jruszala\Desktop\New folder\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\LoCoMoCo.cs
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.csprojResolveAssemblyReference.cache
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.Form1.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.Properties.Resources.resources
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\obj\x86\Debug\L2Bot_Stop_At_White.csproj.GenerateResource.Cache
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\LoCoMoCo.cs
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\L2Bot_Stop_At_White.exe
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\L2Bot_Stop_At_White.pdb
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.UI.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.Util.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\ZedGraph.dll
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.xml
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.CV.UI.xml
+C:\Users\jruszala\Desktop\Robofest_L2Bot_Workshop\C# Program Files\L2Bot_Stop_At_White\L2Bot_Stop_At_White\bin\Debug\Emgu.Util.xml
